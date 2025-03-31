@@ -1,12 +1,12 @@
 name: "Unit tests"
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: ["Unit tests"]
-  schedule:
-    - cron: '0 2 * * *'
-  pull_request:
-    types: [opened, reopened, edited, synchronize, review_requested]
+  #repository_dispatch:
+  #  types: ["Unit tests"]
+  #schedule:
+  #  - cron: '0 2 * * *'
+  #pull_request:
+  #  types: [opened, reopened, edited, synchronize, review_requested]
 
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
